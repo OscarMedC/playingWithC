@@ -2,6 +2,11 @@
 
 int main() {
 
+	char str[15];
+
+	fgets(str, sizeof(str), stdin);
+
+	printString(str);
 
 	return 0;
 }

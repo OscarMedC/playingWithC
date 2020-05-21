@@ -45,3 +45,12 @@ int strLength(char str[]) {
 
 	return l;
 }
+
+void printString(char str[]) {
+
+	int l = 0;
+	while (str[l] != '\n') {
+		printf("%c", str[l]);
+		l++;
+	}
+}

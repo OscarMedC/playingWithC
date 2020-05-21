@@ -8,7 +8,7 @@
 void basicPointer();
 void swap(int* a, int* b);
 int strLength(char str[]);
-
+void printString(char str[]);
 
 
 
