@@ -2,7 +2,10 @@
 
 int main() {
 
+	struct book testBook;
 
+	book_add_new(&testBook);
+	print_book(testBook);
 
 	return 0;
 }

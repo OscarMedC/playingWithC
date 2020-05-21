@@ -54,3 +54,29 @@ void printString(char str[]) {
 		l++;
 	}
 }
+
+void book_add_new(struct book* newBook) {
+	printf("Enter the name of the book you want too add: ");
+	fgets(newBook->name, 50, stdin);
+
+	printf("\nEnter the name of the books author: ");
+	fgets(newBook->author, 50, stdin);
+
+	printf("\nEnter the books genre: ");
+	fgets(newBook->genre, 50, stdin);
+
+	printf("\nEnter the year the book was published: ");
+	scanf_s("%d", &newBook->publYear);
+
+	printf("\nNew book added!\n");
+}
+
+void print_book(struct book printBook) {
+	printf("\nBook:\n");
+	printf("-----\n");
+	printf("\n");
+	printf("%s", printBook.name);
+	printf("%s", printBook.author);
+	printf("%s", printBook.genre);
+	printf("%d\n", printBook.publYear);
+}
