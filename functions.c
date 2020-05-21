@@ -34,3 +34,14 @@ void swap(int* a, int* b) {
 	*a = *b;
 	*b = t;
 }
+
+int strLength(char str[]) {
+
+	int l = 0;
+
+	while (str[l] != '\n') {
+		l++;
+	}
+
+	return l;
+}
