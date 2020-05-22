@@ -74,7 +74,6 @@ void book_add_new(struct book* newBook) {
 void print_book(struct book printBook) {
 	printf("\nBook:\n");
 	printf("-----\n");
-	printf("\n");
 	printf("%s", printBook.name);
 	printf("%s", printBook.author);
 	printf("%s", printBook.genre);
