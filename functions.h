@@ -21,6 +21,37 @@ struct book {
 	int publYear;
 };
 
+struct library {
+	int nrofBooks;
+	struct book* collection[];
+};
+
+enum months {
+	Januari = 31,
+	Februari = 28,
+	Mars = 31,
+	April = 30,
+	May = 31,
+	June = 30,
+	July = 31,
+	August = 31,
+	September = 30,
+	October = 31,
+	November = 30,
+	December = 31
+};
+
+enum week {
+	Monday,
+	Tuesday,
+	Wednesday,
+	Thursday,
+	Friday,
+	Saturday,
+	Sunday
+};
+
+
 void basicPointer();
 void swap(int* a, int* b);
 int strLength(char str[]);

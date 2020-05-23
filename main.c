@@ -5,13 +5,21 @@ int main() {
 
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-	struct book* myBooks = NULL;
+	enum week day;
 
-	myBooks = add_new_book(myBooks);
+	day = Tuesday;
 
-	printf("%s\n", myBooks->name);
+	printf("%d\n", day);
 
-	free(myBooks);
+	enum year month;
+
+	month = Januari;
+
+	printf("\nNumber of days in Januari: %d\n", month);
+
+	month = Februari;
+
+	printf("Number of days in Februari: %d\n", month);
 
 	return 0;
 }
@@ -79,4 +87,16 @@ printf("Adress of struct myBooks = %p\n", &myBooks->publYear);
 free(myBooks);
 
 printf("Adress of struct myBooks = %p\n", myBooks);
+*/
+//struct add_new_book_2 driver
+/*
+struct book* myBooks = NULL;
+
+myBooks = add_new_book(myBooks);
+
+printf("%s\n", myBooks->name);
+
+printf("The address of the allocated memory is: %p\n", myBooks);
+
+free(myBooks);
 */

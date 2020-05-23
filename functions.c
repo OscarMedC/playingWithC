@@ -84,6 +84,8 @@ struct book* add_new_book(struct book* newBook) {
 
 	newBook = malloc(sizeof(struct book));
 
+	printf("The address of the allocated memory is: %p\n", newBook);
+
 	book_add_new(newBook);
 
 	return newBook;
