@@ -27,6 +27,7 @@ int strLength(char str[]);
 void printString(char str[]);
 void book_add_new(struct book * newBook);
 void print_book(struct book printBook);
+struct book* add_new_book(struct book* newBook);
 
 
 #endif

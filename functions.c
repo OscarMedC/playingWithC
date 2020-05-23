@@ -79,3 +79,12 @@ void print_book(struct book printBook) {
 	printf("%s", printBook.genre);
 	printf("%d\n", printBook.publYear);
 }
+
+struct book* add_new_book(struct book* newBook) {
+
+	newBook = malloc(sizeof(struct book));
+
+	book_add_new(newBook);
+
+	return newBook;
+}

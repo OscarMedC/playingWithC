@@ -5,19 +5,13 @@ int main() {
 
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-	struct book* myBooks;
-	
-	myBooks = NULL;
+	struct book* myBooks = NULL;
 
-	printf("Adress of struct myBooks = %p\n", myBooks);
+	myBooks = add_new_book(myBooks);
 
-	myBooks = malloc(sizeof(struct book));
-
-	printf("Adress of struct myBooks = %p\n", myBooks);
+	printf("%s\n", myBooks->name);
 
 	free(myBooks);
-
-	printf("Adress of struct myBooks = %p\n", myBooks);
 
 	return 0;
 }
@@ -68,4 +62,21 @@ printf("\nValues after swap; a: %d, b = %d\n", test.a, test.b);
 struct book testBook;
 book_add_new(&testBook);
 print_book(testBook);
+*/
+//struct add_new_book driver
+/*
+struct book* myBooks;
+
+myBooks = NULL;
+
+printf("Adress of struct myBooks = %p\n", myBooks);
+
+myBooks = malloc(sizeof(struct book));
+
+printf("Adress of struct myBooks = %p\n", myBooks);
+printf("Adress of struct myBooks = %p\n", &myBooks->publYear);
+
+free(myBooks);
+
+printf("Adress of struct myBooks = %p\n", myBooks);
 */
