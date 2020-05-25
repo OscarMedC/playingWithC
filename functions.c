@@ -90,3 +90,21 @@ struct book* add_new_book(struct book* newBook) {
 
 	return newBook;
 }
+
+void carddeck_initialize(struct cardDeck* cards) {
+	for (int i = 0; i < MAX_SUITS; i++) {
+		cards->deck[0][i] = i;
+		for (int j = 0; j < MAX_RANKS; j++) {
+			cards->deck[i][j] = j;
+		}
+	}
+}
+
+void deck_print(struct cardDeck cards) {
+	for (int i = 0; i < MAX_SUITS; i++) {
+		for (int j = 0; j < MAX_RANKS; j++) {
+			printf("%d ", cards.deck[i][j]);
+		}
+		printf("\n");
+	}
+}

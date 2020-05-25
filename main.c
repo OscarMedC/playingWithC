@@ -5,21 +5,11 @@ int main() {
 
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-	enum week day;
+	struct cardDeck myCards;
 
-	day = Tuesday;
+	carddeck_initialize(&myCards);
 
-	printf("%d\n", day);
-
-	enum year month;
-
-	month = Januari;
-
-	printf("\nNumber of days in Januari: %d\n", month);
-
-	month = Februari;
-
-	printf("Number of days in Februari: %d\n", month);
+	deck_print(myCards);
 
 	return 0;
 }
@@ -99,4 +89,22 @@ printf("%s\n", myBooks->name);
 printf("The address of the allocated memory is: %p\n", myBooks);
 
 free(myBooks);
+*/
+//enum driver
+/*
+enum week day;
+
+day = Tuesday;
+
+printf("%d\n", day);
+
+enum year month;
+
+month = Januari;
+
+printf("\nNumber of days in Januari: %d\n", month);
+
+month = Februari;
+
+printf("Number of days in Februari: %d\n", month);
 */
