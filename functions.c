@@ -108,3 +108,29 @@ void deck_print(struct cardDeck cards) {
 		printf("\n");
 	}
 }
+
+void deck_shuffle(struct cardDeck* cards) {
+
+	time_t t;
+
+	srand(time(&t));
+
+	for (int i = 0; i < MAX_RANKS; i++) {
+		int swap = 0;
+		int temp = 0;
+		swap = rand() % MAX_RANKS;
+		temp = cards->deck[0][i];
+		cards->deck[0][i] = cards->deck[0][swap];
+		cards->deck[0][swap] = cards->deck[0][temp];
+	}
+}
+
+void randTest() {
+	time_t t;
+
+	srand(time(&t));
+
+	for (int i = 0; i < 5; i++) {
+		printf("%d\n", rand() % 10);
+	}
+}

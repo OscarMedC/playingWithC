@@ -68,6 +68,8 @@ void print_book(struct book printBook);
 struct book* add_new_book(struct book* newBook);
 void carddeck_initialize(struct cardDeck* cards);
 void deck_print(struct cardDeck cards);
+void deck_shuffle(struct cardDeck* cards);
+void randTest();
 
 
 

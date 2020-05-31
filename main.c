@@ -5,11 +5,13 @@ int main() {
 
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-	struct cardDeck myCards;
+	struct cardDeck deck;
 
-	carddeck_initialize(&myCards);
-
-	deck_print(myCards);
+	carddeck_initialize(&deck);
+	deck_print(deck);
+	deck_shuffle(&deck);
+	printf("\n\n");
+	deck_print(deck);
 
 	return 0;
 }
@@ -107,4 +109,12 @@ printf("\nNumber of days in Januari: %d\n", month);
 month = Februari;
 
 printf("Number of days in Februari: %d\n", month);
+*/
+//print deck driver
+/*
+struct cardDeck myCards;
+
+carddeck_initialize(&myCards);
+
+deck_print(myCards);
 */
